@@ -1,0 +1,41 @@
+---
+title: "Functions & Variables (in detail)"
+description: "DacoidChat supports function calling, which allows your chatbot to interact with third-party tools like Make.com, n8n, or any custom backend via webhooks. This enables real-time data fetching, form submission, and automation."
+icon: "gear"
+---
+
+## Functions
+
+Functions let your chatbot fetch data or take actions during a conversation.
+
+**Primary Use Cases:**
+
+1. **Fetching Data** <Icon icon="arrow-right" /> Pull info from external APIs (e.g., user profile, weather, product info).
+2. **Taking Action** <Icon icon="arrow-right" /> Trigger workflows like form submission, appointment booking, or CRM updates.
+
+Each function includes:
+
+- **Name** – A unique identifier for the function (e.g., send_email, check_credit)
+- **Description** – Helps the bot understand when and why to use this function
+- **Server URL** – The webhook endpoint (e.g., Make.com or n8n)
+- **Delay Message** – Optional message shown while waiting for a response
+- **Variables** – Parameters required to execute the function
+
+You can add multiple functions to the same bot.
+
+## Variables
+
+Variables define the **inputs** your function needs to operate. These are dynamically extracted from the user’s conversation.
+
+Each variable includes:
+
+- **Name** – What the data represents (e.g., email, amountOwed, dateRequested)
+- **Description** – Helps the AI understand what kind of data it’s looking for
+
+**Example Variables:**
+
+- **email** <Icon icon="arrow-right" /> User’s email address
+- **code** <Icon icon="arrow-right" /> A verification code
+- **amountOwed** <Icon icon="arrow-right" /> The outstanding balance to be paid
+
+These variables are passed along with your function call to ensure accurate and personalized data transfer.

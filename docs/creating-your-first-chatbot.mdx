@@ -1,0 +1,70 @@
+---
+title: Creating Your First Chatbot
+icon: "robot"
+description: "Click the **“+ New bot”** button on the dashboard to open the chatbot creation panel. This is where you define everything about your assistant—from its personality to external integrations."
+---
+
+## 1. Chatbot Name
+
+Label your chatbot clearly to identify its purpose.
+
+*Example:* Healthcare Assistant, Sales Qualifier, Booking Bot
+
+## 2. Provider
+
+Choose which backend AI service to use:
+
+- DacoidChat (uses platform credits)
+- OpenAI
+- Gemini
+
+<Warning>
+To use your free credits, select **DacoidChat**
+
+</Warning>
+
+## 3. Model
+
+After selecting a provider, choose from supported models. For example:
+
+- OpenAI: gpt-4, gpt-3.5-turbo
+- Gemini: gemini-pro, etc.
+- DacoidChat: our optimized default model
+
+## 4. First Message
+
+Set a default opening message to greet users.
+
+*Example:* Hello, how can I assist you today?
+
+You can toggle this ON/OFF using the switch.
+
+## 5. Instructions
+
+This is where you describe what your bot should do.
+
+<Tip>
+**Tips:**
+
+- Define the role and task clearly.
+- Use sample Q&A to guide tone and responses.
+- Be specific with behavior, e.g., “Always confirm the user’s name before booking.”
+</Tip>
+
+## 6. Functions
+
+Add function calls for data fetching or external actions.
+
+- **Name** – Identifier like get_user_data
+- **Description** – What the function does
+- **Delay Message** – Optional message shown while waiting
+- **Server URL** – Where the request should be sent
+- **Variables** – Inputs like email, amountOwed, etc.
+
+## 7. Knowledge Base
+
+Upload documents your bot can reference. Supported: PDF, TXT, DOCX.
+
+Toggle the feature ON to activate.
+
+Once complete, click **Save Changes** to launch your chatbot.
